@@ -1,0 +1,1 @@
+Android Calculator is a sleek, professional calculator with a deep navy, black, and white theme. It supports all basic operations, follows PEMDAS for accurate results, features a responsive layout with easy-to-tap buttons, and separates equations and results with a white dividing line for clarity and readability.  - Rendon Torente  - rendontorente.kesug.com
