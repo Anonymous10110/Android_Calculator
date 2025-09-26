@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp">
+
+    <!-- Expression -->
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:gravity="end"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/colorText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:gravity="end"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvExpression"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Calculator Grid -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1 -->
+        <Button android:id="@+id/btnClear" android:text="C" style="@style/CalcButton.Accent"/>
+        <Button
+            android:id="@+id/btnDel"
+            android:text="DEL"
+            android:textSize="18sp"
+            style="@style/CalcButton"/>
+        <Button android:id="@+id/btnOpenParen" android:text="(" style="@style/CalcButton"/>
+        <Button android:id="@+id/btnCloseParen" android:text=")" style="@style/CalcButton"/>
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/btn7" android:text="7" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn8" android:text="8" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn9" android:text="9" style="@style/CalcButton"/>
+        <Button android:id="@+id/btnDivide" android:text="÷" style="@style/CalcButton"/>
+
+        <!-- Row 3 -->
+        <Button android:id="@+id/btn4" android:text="4" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn5" android:text="5" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn6" android:text="6" style="@style/CalcButton"/>
+        <Button android:id="@+id/btnMultiply" android:text="×" style="@style/CalcButton"/>
+
+        <!-- Row 4 -->
+        <Button android:id="@+id/btn1" android:text="1" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn2" android:text="2" style="@style/CalcButton"/>
+        <Button android:id="@+id/btn3" android:text="3" style="@style/CalcButton"/>
+        <Button android:id="@+id/btnMinus" android:text="−" style="@style/CalcButton"/>
+
+        <!-- Row 5 -->
+        <Button android:id="@+id/btn0" android:text="0" style="@style/CalcButton"/>
+        <Button android:id="@+id/btnDot" android:text="." style="@style/CalcButton"/>
+        <Button android:id="@+id/btnEqual" android:text="=" style="@style/CalcButton.Accent"/>
+        <Button android:id="@+id/btnPlus" android:text="+" style="@style/CalcButton"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

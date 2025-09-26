@@ -1,0 +1,9 @@
+<resources>
+    <color name="colorPrimary">#0A192F</color> <!-- Deep Navy -->
+    <color name="colorPrimaryDark">#050B16</color> <!-- Darker Navy -->
+    <color name="colorAccent">#1F6FEB</color> <!-- Blue highlight -->
+    <color name="colorBackground">#000000</color> <!-- Black -->
+    <color name="colorText">#FFFFFF</color> <!-- White -->
+    <color name="colorButtonDark">#14243D</color> <!-- Button dark navy -->
+    <color name="colorButtonLight">#1F2E4C</color> <!-- Button lighter navy -->
+</resources>
